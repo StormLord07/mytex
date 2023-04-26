@@ -1,0 +1,49 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={График эмпирической функции распределения},
+x grid style={darkgray176},
+xlabel={\(\displaystyle x\)},
+xmin=-0.35, xmax=7.35,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle F(x)\)},
+ymin=-0.049, ymax=1.029,
+ytick style={color=black}
+]
+\path [draw=black, semithick]
+(axis cs:0,0)
+--(axis cs:1,0);
+
+\path [draw=black, semithick]
+(axis cs:1,0.005)
+--(axis cs:2,0.005);
+
+\path [draw=black, semithick]
+(axis cs:2,0.085)
+--(axis cs:3,0.085);
+
+\path [draw=black, semithick]
+(axis cs:3,0.305)
+--(axis cs:4,0.305);
+
+\path [draw=black, semithick]
+(axis cs:4,0.605)
+--(axis cs:5,0.605);
+
+\path [draw=black, semithick]
+(axis cs:5,0.85)
+--(axis cs:6,0.85);
+
+\path [draw=black, semithick]
+(axis cs:6,0.98)
+--(axis cs:7,0.98);
+
+\end{axis}
+
+\end{tikzpicture}

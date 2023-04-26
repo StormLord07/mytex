@@ -1,0 +1,43 @@
+% This file was created with tikzplotlib v0.10.1.
+\begin{tikzpicture}
+
+\definecolor{darkgray176}{RGB}{176,176,176}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+title={Полигон относительных частот},
+x grid style={darkgray176},
+xlabel={\(\displaystyle x\)},
+xmin=-0.35, xmax=7.35,
+xtick style={color=black},
+y grid style={darkgray176},
+ylabel={\(\displaystyle wᵢ\)},
+ymin=-0.0295, ymax=0.6195,
+ytick style={color=black}
+]
+\addplot [semithick, blue, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.575
+1 0.27
+2 0.085
+3 0.055
+4 0.015
+5 0
+6 0
+7 0
+};
+\addplot [semithick, red, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.59
+1 0.2419
+2 0.099179
+3 0.04066339
+4 0.0166719899
+5 0.00683551585899999
+6 0.00280256150219
+7 0.0011490502158979
+};
+\end{axis}
+
+\end{tikzpicture}
